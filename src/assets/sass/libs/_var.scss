@@ -1,0 +1,49 @@
+$palette:(
+    gray-darker    : #333,
+    gray-dark      : #666,
+    gray           : #999,
+    gray-medium    : #ccc,
+    gray-light     : #eee,
+    bg:(
+        main:#fff,
+        vice:#3d1466,
+        minor:#3A3249,
+    ),
+    color:(
+        main:#3A3249, //rgb(58, 50, 73)
+        vice:#fff,
+        vice-dark: rgba(255,255,255, .3),
+        main-dark:rgba(58, 50, 73, .6)
+    ),
+    status:(
+        hover:#FFBB33,
+        box-hover:#5D3C7E 
+    ),
+    border:(
+        dark:rgba(255,255,255,.1)
+    )
+);
+
+
+$font:(
+    family:'Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif',
+    size:(
+        base:16px,
+    ),
+    weight:(
+        base:300,
+        bold:600,
+    ),
+);
+
+$duration: (
+    transition1:0.211s,
+    transition2:0.311s,
+);
+
+$size:(
+    radius:(
+        r1:3px,
+        r2:4px,
+    )
+);

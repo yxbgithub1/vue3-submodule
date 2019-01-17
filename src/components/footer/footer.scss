@@ -1,0 +1,53 @@
+@import '@assets/sass/base.scss';
+#footer{
+    color: _palette(color, vice);
+    padding: 70px 0;
+    background-color: _palette(bg, minor);
+    a{
+        color: inherit;
+        @extend .elastic;
+        color: _palette(color, vice-dark);
+        &:hover{
+            color: _palette(status, hover);
+        }
+    }
+    .contact{
+        width: 187px;
+    }
+
+    .menu{
+        padding-bottom: 10px;
+        .dl{
+            margin-right: 45px;
+            &:last-child{
+                margin-right: 0;
+            }
+            dt{
+                padding-bottom: 10px;
+            }
+            dd{
+                margin-top: 1em;
+            }
+        }
+        b{
+            font-size: 18px;
+        }
+    }
+
+    .company{
+        font-size: 14px;
+        margin-top: 45px;
+        padding-top:35px; 
+        border-top: solid 1px rgba(255, 255, 255, .1);
+        .link{
+            margin-bottom: 20px;
+            @extend .ky.line;
+            &:last-child:after{
+                display: none;
+            }
+        }
+        .copyright{
+            color: _palette(color, vice-dark);
+        }
+    }
+}

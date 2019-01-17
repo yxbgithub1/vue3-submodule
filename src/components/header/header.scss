@@ -1,0 +1,163 @@
+@import '@assets/sass/base.scss';
+
+#header{
+    $head-height:80px;
+    $vertical:($head-height - 16) / 2;
+
+    height: $head-height;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
+    background-color:rgba(255,255,255,1);
+    
+    a{
+        &:not(.logo){
+            @extend .elastic;
+        }
+    }
+
+    @at-root{
+        #nav{
+            margin-top:$vertical;
+            
+            a.current{
+                @extend .keep;
+                font-weight: 600;
+                color: _palette(status, hover);
+            }
+
+            .icon{
+                &:before{
+                    content: '';
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 6px;
+                    width: 12px;
+                    height: 12px;
+                    position: relative;
+                    top:2px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 12px 12px;
+                }
+                // &.i1:before{
+                //     top:3px;
+                //     background-image: url('../../assets/imgs/icons/iconchanpinjieshao@2x.png');
+                // }
+                // &.i2:before{
+                //     background-image: url('../../assets/imgs/icons/iconzengzhi@2x.png');
+                // }
+                // &.i4:before{
+                //     background-image: url('../../assets/imgs/icons/icongongneng@2x.png');
+                // }
+                // &.i5:before{
+                //     background-image: url('../../assets/imgs/icons/iconxuzhi@2x.png');
+                // }
+                // &.i6:before{
+                //     background-image: url('../../assets/imgs/icons/iconkehuzhichi@2x.png');
+                // }
+                // &.i7:before{
+                //     background-image: url('../../assets/imgs/icons/iconqiyejieshao.png');
+                // }
+                // &.i8:before{
+                //     background-image: url('../../assets/imgs/icons/iconjiaruwomen.png');
+                // }
+                // &.i9:before{
+                //     background-image: url('../../assets/imgs/icons/iconlianxiwomen.png');
+                // }
+            }
+        }
+    }
+
+    .inner{
+        position: relative;
+        margin-left:1.6em;
+    }
+
+    .menu{
+        $ul-width:220px;
+
+        top: 30px;
+        left: -56px;
+        display:none;
+        padding: 15px 0 45px;
+        border-radius:_size(radius, r1);
+        background-color: #fff;
+        box-shadow: 0px 0px 10px #e9e9e9;
+        ul{
+            border-right:solid 1px #e9e8e8;
+            width:$ul-width;
+            margin-top:20px;
+            &:last-child{
+                border:none;
+            }
+        }
+        a{
+            font-size: 14px;
+            margin-top:18px;
+            color: _palette(color, main-dark);
+            &:hover{
+                color: _palette(status, hover);
+            }
+            
+        }
+        h3{
+            margin-bottom: 10px;
+        }
+
+        &.first,
+        &.second,
+        &.fifth{
+            width: $ul-width * 3;
+        }
+
+        &.third,
+        &.fourth{
+            $ul-width:160px;
+            width: $ul-width * 1;
+            ul{
+                margin-top:0px;
+                width:$ul-width;
+            }
+        }
+
+        &.show{
+            display:block;
+        }
+    }
+
+    .logo{
+        $logo-widht:163px;
+        $logo-height:39px;
+
+        position: absolute;
+        width:$logo-widht;
+        height:$logo-height;
+        top: ($head-height - $logo-height) / 2;
+
+        //background:url('../../assets/imgs/logo_img.png') no-repeat center;
+
+        & + nav{
+            padding-left: $logo-widht + 75;
+        }
+      
+    }
+
+    
+    .login{
+        left: auto;
+        right: 0;
+        top: ($head-height - 16) / 2;
+
+        .line{
+            position: relative;
+            display:inline-block;
+            margin:0 10px;
+            top: 0px;
+            width: 1px;
+            height: 12px;
+            border-left:solid 1px #ccc;
+        }
+        .old{
+            margin-left: 2em;
+        }
+    }
+} 

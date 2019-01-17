@@ -1,0 +1,24 @@
+[submodule "src/views/news"]
+	path = src/views/news
+
+[submodule "src/views/admin"]
+	path = src/views/admin
+
+[submodule "src/views/user"]
+	path = src/views/user
+
+[submodule "src/views/video"]
+	path = src/views/video
+
+[submodule "src/views/supplier"]
+	path = src/views/supplier
+
+[submodule "src/views/serve"]
+	path = src/views/serve
+
+[submodule "src/views/wapp"]
+	path = src/views/wapp
+
+[submodule "src/components"]
+	path = src/components
+
